@@ -1,0 +1,123 @@
+body {
+  background-color: azure;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.animated {
+  position: relative;  
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: groove rgb(159, 117, 4) 1px;
+  background-color: rgb(255, 162, 0);
+  animation: javi 1.5s linear infinite forwards;
+}
+
+@keyframes javi {
+ 0% {
+  border: groove rgb(159, 117, 4) 1px;
+  background-color: rgb(255, 162, 0);
+ }
+ 
+ 10% {
+  border: groove rgb(159, 117, 4) 1px;
+  background-color: rgb(255, 162, 0);
+  transform:scale(1.05) translatex(20%) translateY(30%);
+ }
+
+ 20% {
+  border: groove rgb(159, 117, 4) 1px;
+  background-color: rgb(255, 162, 0);
+  transform:scale(1.1) translatex(30%)translateY(45%);
+ }
+
+ 30% {
+  border: groove rgb(159, 117, 4) 1px;
+  background-color: rgb(255, 162, 0);
+  transform:scale(1.15) translatex(40%) translateY(60%);
+ }
+
+ 40% {
+  border: groove rgb(159, 117, 4) 1px;
+  background-color: rgb(255, 162, 0);
+  transform:scale(1.2) translatex(50%)translateY(75%);
+ }
+
+ 50% {
+  border: groove rgb(159, 117, 4) 1px;
+  background-color: rgb(255, 162, 0);
+  transform:scale(1.25) translatex(50%) translateY(75%);
+ }
+
+ 60% {
+  border: groove rgb(159, 117, 4) 1px;
+  background-color: rgb(255, 162, 0);
+  transform:scale(1.2) translatex(40%)translateY(60%);
+ }
+
+ 70% {
+  border: groove rgb(159, 117, 4) 1px;
+  background-color: rgb(255, 162, 0);
+  transform:scale(1.15) translatex(30%)translateY(45%);
+ }
+
+ 80% {
+  border: groove rgb(159, 117, 4) 1px;
+  background-color: rgb(255, 162, 0);
+  transform:scale(1.1)translatex(20%)translateY(30%);
+ }
+
+ 90% {
+  border: groove rgb(159, 117, 4) 1px;
+  background-color: rgb(255, 162, 0);
+  transform:scale(1.05)translatex(10%) translateY(15%);
+ }
+
+ 100% {
+  border: groove rgb(159, 117, 4) 1px;
+  background-color: rgb(255, 162, 0);
+  transform:scale(1)translatex(0%)translateY(0%);
+ }
+}
+
+.transicion {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+}
+
+#animatedSquare {
+  width: 30px;
+  height: 30px;
+  background-color: azure;
+  margin: 10px;
+}
+
+#animatedSquare:target {
+  transform: translateX(500%) translateY(500%);
+  transition: 0.4s;
+}
+
+label {
+  width: 10px;
+  height: 10px;
+  background-color: aqua;
+  margin: 100px;
+}
+
+.forSquare {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: rgb(29, 211, 74);
+}
+
+.forSquareback {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: red;
+}
